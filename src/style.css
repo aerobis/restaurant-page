@@ -14,3 +14,26 @@
     src: url("./fonts/Roboto-VariableFont_wdth\,wght.ttf");
 }
 
+/*HOME PAGE*/
+.intro-container{
+    /* background-image: url(/src/assets/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;  */
+    
+    height: 100vh;
+    width: 100vw;
+}
+
+.intro-header{
+    font-family: "SN Pro";
+    font-weight: bold;
+    font-size: clamp(1.2rem, 2vh, 1.5rem);
+}
+
+.intro-text{
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: clamp(1rem, 2vh, 1.2rem);
+}
+
