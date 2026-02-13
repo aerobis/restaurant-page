@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", (event)=>{
     introHeader.classList.add('intro-header');
 
     let introBody = document.createElement('p');
-    introText.classList.add('intro-body');
+    introBody.classList.add('intro-body');
 
     introHeader.textContent = "Taste the Blend";
     introBody.textContent = "A good brew isn't just about the coffee, its about the brewer. Experience exquisite coffee, made by the best in the craft. First one's on us.";
