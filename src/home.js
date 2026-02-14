@@ -1,8 +1,6 @@
-import backgroundImgPath from './assets/images/background.jpg';
+import backgroundImgPath from './assets/images/background.jpg'; //Since you can't input this long path in line 8
 
-document.addEventListener("DOMContentLoaded", (event)=>{
-    let contentContainer = document.querySelector("#content");
-
+export function renderHome(contentContainer){
     let introContainer = document.createElement('div');
     introContainer.classList.add('intro-container');
 
@@ -31,4 +29,4 @@ document.addEventListener("DOMContentLoaded", (event)=>{
     introContainer.appendChild(introText);
     
     contentContainer.appendChild(introContainer);
-});
+};

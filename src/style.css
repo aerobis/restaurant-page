@@ -19,6 +19,8 @@
     --primary-color: rgb(248, 206, 117);
     --secondary-color: rgb(0, 0, 0);
     --hover-color: rgb(246, 184, 51);
+    --font-size-large: clamp(1.2rem, 2vw, 1.5rem);
+    --font-size-normal: clamp(1rem, 1.3vw, 1.2rem);
 }
 
 body{
@@ -116,14 +118,13 @@ header>nav{
 .intro-header{
     font-family: "SN Pro";
     font-weight: bold;
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-size: var(--font-size-large);
 }
 
 .intro-body{
     font-family: "Roboto";
-    font-size: clamp(1rem, 1.3vw, 1.2rem);
+    font-size: var(--font-size-normal);
 }
-
 
 .background-image{
     object-fit: cover;
@@ -132,4 +133,8 @@ header>nav{
     filter: blur(1.3px) brightness(0.5);
     transform: scale(1.05);
 }
+
+
+/*MENU PAGE*/
+
 
