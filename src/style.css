@@ -18,6 +18,7 @@
 :root{
     --primary-color: rgb(248, 206, 117);
     --secondary-color: rgb(0, 0, 0);
+    --hover-color: rgb(246, 184, 51);
 }
 
 body{
@@ -48,6 +49,10 @@ header{
     color: var(--primary-color);
 }
 
+.company-name:hover{
+    cursor: pointer;
+}
+
 header>nav{
     width: 100%;
     display: flex;
@@ -70,15 +75,18 @@ header>nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.nav-buttons:hover{
+    cursor: pointer;
+    transform: scale(1.06);
+    background-color: var(--hover-color);
 }
 
 
 /*HOME PAGE*/
 .intro-container{
-    /* background-image: url(/src/assets/images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;  */
     position: relative;
     overflow: hidden;
     height: 50vh;
