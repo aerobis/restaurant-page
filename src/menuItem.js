@@ -1,9 +1,11 @@
 export function createMenuItem({name, image, price}){
     let item = document.createElement('div');
-    item.classList.add("menu-item");
+    item.classList.add("menu-item-card");
 
     let img = document.createElement('img');
     img.classList.add("menu-item-image");
+    img.style.height="100px";
+    img.style.width="100px";
     img.src = image;
     img.alt = name;
 
@@ -19,5 +21,5 @@ export function createMenuItem({name, image, price}){
     item.appendChild(heading);
     item.appendChild(priceTag);
 
-    return card;
+    return item;
 };

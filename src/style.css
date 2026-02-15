@@ -136,5 +136,40 @@ header>nav{
 
 
 /*MENU PAGE*/
+.menu-container{
+    position: relative;
+    overflow: hidden;
+    width: 50vw;
 
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-rows: 0.3fr 4fr;
+    grid-auto-flow: rows;
+    gap: 15px;
+    padding: 15px;
+    border: 3px solid black;
+}
+
+.menu-items-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-category{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-category-header{
+    text-align: center;
+}
+
+.menu-category-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+}
 
