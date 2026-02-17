@@ -2,11 +2,16 @@ import {createMenuCategory} from "./menuCategory.js";
 
 import singleEspressoImg from "./assets/images/single-shot-espresso.jpg";
 import doubleEspressoImg from "./assets/images/double-shot-espresso.jpg";
+import americanoImg from "./assets/images/americano.jpg"
+
 import cappuccinoImg from "./assets/images/cappuccino.jpg";
 import latteImg from "./assets/images/latte.jpg";
 import caramelLatteImg from "./assets/images/caramel-latte.jpg";
 import mochaImg from "./assets/images/mocha.jpg"
 
+import cheesecakeImg from "./assets/images/cheesecake.jpg";
+import tiramisuImg from "./assets/images/tiramisu.jpg";
+import chocolateCakeImg from "./assets/images/chocolate-cake.jpg";
 
 export function renderMenu(contentContainer){
     if(contentContainer.children.length > 0){
@@ -28,9 +33,10 @@ export function renderMenu(contentContainer){
     let menuItemsContainer = document.createElement("div");
     menuItemsContainer.classList.add("menu-items-container");
 
-    let espressoItems = [
+    let classicItems = [
         {name: 'Espresso', image: singleEspressoImg, price:"Rs. 150"},
         {name: 'Doppio', image: doubleEspressoImg, price:"Rs. 250"},
+        {name: 'Americano', image: americanoImg, price:"Rs. 215"},
     ];
 
     let milkItems = [
@@ -39,15 +45,23 @@ export function renderMenu(contentContainer){
         {name: 'Caramel Latte', image: caramelLatteImg, price: 'Rs. 285'},
         {name: 'Mocha', image: mochaImg, price: 'Rs. 295'},
     ];
+
+    let cakeItems = [
+        {name: "Cheesecake", image: cheesecakeImg, price:"Rs 260"},
+        {name: "Tiramisu", image: tiramisuImg, price:"Rs. 160"},
+        {name: "Chocolate Cake", image: chocolateCakeImg, price:"Rs. 125"},
+    ];
     
-    let espressoCategory = createMenuCategory("Espresso", espressoItems);
+    let espressoCategory = createMenuCategory("Classics", classicItems);
     let milkCategory = createMenuCategory("Milk Items", milkItems);
+    let cakeCategory = createMenuCategory("Dessert", cakeItems);
 
     menuContainer.appendChild(menuLegend);
     menuContainer.appendChild(menuItemsContainer);
 
     menuItemsContainer.appendChild(espressoCategory);
     menuItemsContainer.appendChild(milkCategory);
+    menuItemsContainer.appendChild(cakeCategory);
 
     contentContainer.appendChild(menuContainer);
 };
