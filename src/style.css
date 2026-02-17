@@ -178,6 +178,10 @@ header>nav{
     padding: 15px;
 }
 
+.menu-category:last-child{
+    border-bottom: 0;
+}
+
 .menu-category-header{
     margin-bottom: 15px;
     font-size: var(--font-size-large);
