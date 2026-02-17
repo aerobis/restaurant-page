@@ -149,8 +149,18 @@ header>nav{
     grid-template-rows: 0.3fr 4fr;
     grid-auto-flow: rows;
     gap: 15px;
-    padding: 15px;
+    /* padding: 15px; */
     border: 3px solid black;
+}
+
+.menu-legend{
+    border-bottom: 2px solid black;
+    padding: 15px;
+}
+
+.menu-legend-text{
+    text-align: center;
+    font-size: var(--font-size-large);
 }
 
 .menu-items-container{
@@ -162,14 +172,29 @@ header>nav{
 .menu-category{
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid black;
+    padding: 15px;
 }
 
 .menu-category-header{
-    text-align: center;
+    margin-bottom: 15px;
 }
 
 .menu-category-items{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-auto-flow: column;
+    gap: 80px;
 }
 
+.menu-item-image{
+    width: 100px;
+    height: 100px;
+}
+
+.menu-item-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

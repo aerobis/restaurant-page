@@ -4,6 +4,10 @@ import singleEspressoImg from "./assets/images/single-shot-espresso.jpg";
 import doubleEspressoImg from "./assets/images/double-shot-espresso.jpg";
 
 export function renderMenu(contentContainer){
+    if(contentContainer.children.length > 0){
+        contentContainer.innerHTML = '';
+    };
+
     let menuContainer = document.createElement("div");
     menuContainer.classList.add("menu-container");
 

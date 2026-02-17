@@ -1,6 +1,10 @@
 import backgroundImgPath from './assets/images/background.jpg'; //Since you can't input this long path in line 8
 
 export function renderHome(contentContainer){
+    if(contentContainer.children.length > 0){
+        contentContainer.innerHTML = '';
+    };
+
     let introContainer = document.createElement('div');
     introContainer.classList.add('intro-container');
 
