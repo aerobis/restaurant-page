@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;
     box-sizing: border-box;
 }
 
@@ -26,7 +26,7 @@
 
 body{
     display: grid;
-    grid-template-rows: 0.3fr 4fr;
+    grid-template-rows: auto 1fr;
     grid-auto-flow: row;
     height: 100vh;
 }
@@ -47,12 +47,16 @@ header{
     grid-auto-flow: columns;
     gap: 50px;
     background-color: var(--secondary-color);
-    padding: 5px;
+    padding: 0 12px;
+    height: 4rem;
+    min-height: 4rem;
+    align-items: center;
 }
 
 .company-name{
     font-family: "SN Pro";
     color: var(--primary-color);
+    font-size: var(--font-size-large);
 }
 
 .company-name:hover{
@@ -70,13 +74,13 @@ header>nav{
 .nav-buttons{
     font-family: "Roboto";
     font-weight: bold;
-    font-size: 10px;
+    font-size: clamp(0.8rem, 1.2rem, 1.5rem);
     background-color: var(--primary-color);
     color: black;
     padding: 10px;
     border: 0;
     border-radius: 8px;
-    height: 1.5rem;
+    height: clamp(1.5rem, 1.5rem, 2.5rem);
 
     display: flex;
     justify-content: center;

@@ -21,6 +21,6 @@ document.addEventListener("DOMContentLoaded", (event)=>{
         renderAbout(contentContainer);
     });
 
-    renderAbout(contentContainer);
+    renderHome(contentContainer);
 
 });
